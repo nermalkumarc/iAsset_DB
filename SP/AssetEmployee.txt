@@ -1,0 +1,31 @@
+USE [TEST]
+GO
+/****** Object:  StoredProcedure [IAS].[AssetEmployee]    Script Date: 23-12-2019 10:16:28 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER Procedure [IAS].[AssetEmployee] @Id int,@EmpId int,@AssetID int,
+@Remarks varchar(100),@IssuedOn datetime,@ReturnOn datetime,@Reason varchar(100),@Status varchar(15)
+ AS
+ begin
+
+if(@Id = 0)
+begin 
+	insert into IAS.Employeeasset(EmpId,AssetId,Remarks,IssuedOn,ReturnOn,Reason) values(@EmpId,@AssetID,@Remarks,@IssuedOn,@ReturnOn,@Reason)	
+end
+else
+begin
+
+Update IAS.Employeeasset set EmpId=@EmpId,AssetId=@AssetID, Remarks=@Remarks,
+IssuedOn=@IssuedOn,ReturnOn=@ReturnOn,Reason=@Reason where ID=@Id
+
+
+ end
+ update IAS.Assetlist  set Status=@Status where ID =@AssetID
+ end
+
+
+
+

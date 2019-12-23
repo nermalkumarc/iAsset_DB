@@ -1,0 +1,28 @@
+﻿ID,Code,Name,EmailID,MobileNo,Department,Designation,RoleID,DOJ,Location,Password,isActive,Gender,CreatedOn,UpdatedOn,CreatedBy,UpdatedBy
+1,IS7060,lee,abcd@gmail.com,1234556,T&F,CEO,0,2019-03-19 12:57:26.000,Noida,IS7060,1,Male,NULL,NULL,NULL,NULL
+2,IS7062,shannu,efgh@gmail.com,67890567,T&E,CEO,0,2019-03-21 06:00:15.000,Japan,IS7062,1,Female,NULL,2019-03-21,NULL,lee
+43,IS7066,alan,ghjkl,123456,T&E,Consultant,1,2019-03-11 04:53:31.000,Noida,NULL,1,Female,NULL,NULL,NULL,NULL
+44,IS7070,vidhya,rtyu@yahoo.com,12345678,T&F,Manager,1,2019-03-19 11:05:52.000,Chennai,NULL,1,Male,NULL,NULL,NULL,NULL
+45,IS7022,fdsgfd,bnmk,123457,Dove,CEO,1,2019-03-12 08:41:27.000,Canada,NULL,1,Female,NULL,NULL,NULL,NULL
+46,IS2043,df,dhiraj@gmail.com,12345456,T&F,Consultant,1,2019-03-19 08:45:37.000,Puducherry,NULL,1,Female,NULL,NULL,NULL,NULL
+48,k,hjk,kggh,232435,T&E,CEO,1,2019-03-12 06:44:29.000,Chennai,NULL,0,Male,NULL,NULL,NULL,NULL
+49,IS7013,park shinhye,ghdjfkkf@gmail.com,1234567,SDU,CEO,0,2019-03-19 12:49:51.000,Puducherry,NULL,1,Male,NULL,NULL,NULL,NULL
+50,IS7068,lee min ho,asdfg,56789,T&E,Manager,0,2019-03-11 09:12:50.000,US,NULL,1,Male,NULL,NULL,NULL,NULL
+52,IS1707,sj,abcd@gmail.com,12345667,SDU,Programmer,1,2019-03-19 12:50:58.000,Japan,NULL,1,Male,NULL,NULL,NULL,NULL
+53,,,,0,,,1,2019-03-15 08:39:10.000,,NULL,0,,NULL,NULL,NULL,NULL
+54,IS7069,kim,abcd@gmail.com,12345667,Dove,CEO,1,2019-03-14 10:21:09.000,Canada,NULL,1,Male,NULL,NULL,NULL,NULL
+55,IS7061,harry,abcd@gmail.com,6789056,T&E,Programmer,1,2019-03-15 11:04:12.000,Canada,NULL,1,Female,NULL,NULL,NULL,NULL
+56,IS5678,parkshin,efgh@gmail.com,1234556,SDU,Programmer,0,2019-03-15 06:14:29.000,Chennai,NULL,1,Female,NULL,NULL,NULL,NULL
+57,true,true,a@S.com,1234567,true,true,1,2019-03-15 09:10:40.000,true,NULL,1,true1,NULL,NULL,NULL,NULL
+59,IS5084,E,E@g.com,4534576,T&F,CEO,1,2019-03-15 12:18:36.000,Chennai,NULL,1,Male,NULL,NULL,NULL,NULL
+60,IS70625,yuty,abcd@gmail.com,4656768,T&E,Manager,1,2019-03-18 11:50:24.000,Noida,NULL,1,Female,NULL,NULL,NULL,NULL
+61,IS9821,efrgt,hi@gmail.com,12345667,T&F,CEO,1,2019-03-18 12:26:39.000,Noida,NULL,1,Male,NULL,NULL,NULL,NULL
+62,IS7090,kim ji won,abcd@gmail.com,12345667,T&E,Programmer,0,2019-03-19 04:28:22.000,Canada,NULL,1,Female,NULL,NULL,NULL,NULL
+63,IS7091,kyungsoo,kyungsoo@gmail.com,12345667,T&F,Programmer,0,2019-03-19 04:36:38.000,Japan,Is7064*#,1,Male,NULL,NULL,NULL,NULL
+64,IS890,ji chang,abcd@gmail.com,12345667,Dove,Programmer,1,2019-03-19 12:14:27.000,Noida,IS890,1,Male,NULL,NULL,NULL,NULL
+65,IS70612,shinchan,abcd@gmail.com,2357686,T&E,Manager,1,2019-03-19 12:19:42.000,Noida,IS70612,1,Female,NULL,NULL,NULL,NULL
+66,IS70609,Alan,abcd@gmail.com,12345667,T&E,CEO,0,2019-03-21 05:04:55.000,Chennai,IS70609,0,Male,NULL,2019-03-21,NULL,Alan
+67,IS70678,vdf,abcd@gmail.com,12345667,T&E,Programmer,1,2019-03-19 12:36:45.000,Noida,IS70678,1,Male,NULL,NULL,NULL,NULL
+68,IS70667,false,abcd@gmail.com,5255454,T&E,Programmer,1,2019-03-19 12:56:02.000,Chennai,IS70667,1,Male,NULL,NULL,NULL,NULL
+69,IS17686,vj,freelancer@integra.co.in,09876543,T&F,Manager,1,2019-03-21 05:39:55.000,Canada,,1,Female,NULL,2019-03-21,NULL,shannu
+72,IS70602,fdgfhb,abcd@gmail.com,3454667788,T&F,CEO,0,2019-03-21 10:28:28.000,Noida,IS70602,1,Male,2019-03-20,2019-03-21,shannu,shannu

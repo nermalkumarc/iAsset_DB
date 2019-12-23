@@ -1,0 +1,18 @@
+USE [TEST]
+GO
+/****** Object:  StoredProcedure [IAS].[AssetStatus]    Script Date: 23-12-2019 10:17:01 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER Procedure [IAS].[AssetStatus]
+as
+DECLARE @Status varchar,@EmployeeCode varchar,@AssetCode varchar,@Remarks varchar,@IssuedOn datetime,@ReturnOn date,@Reason varchar;
+-- create two objects '1' and '2'
+INSERT INTO IAS.Assetlist (Status) values ('Not Working')
+
+INSERT INTO IAS.Employeeasset(AssetCode,Remarks,EmployeeCode,IssuedOn,ReturnOn,Reason) values('IS-S1465','something','IS7060','2019-02-30','2019-02-28','damage')
+
+
+select @Status as Status,@EmployeeCode as EmployeeCode ,@AssetCode as AssetCode, @Remarks as Remarks, @IssuedOn as IssuedOn, @ReturnOn as ReturnOn,@Reason as Reason

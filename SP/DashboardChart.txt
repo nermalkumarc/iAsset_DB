@@ -1,0 +1,16 @@
+USE [TEST]
+GO
+/****** Object:  StoredProcedure [IAS].[DashboardChart]    Script Date: 23-12-2019 10:17:33 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [IAS].[DashboardChart] 
+AS
+DECLARE @EmployeeCount int,@AssetlistCount int,@AvailableAssetCount int, @InUseAssetCount int
+SET @EmployeeCount= (SELECT COUNT(CODE) FROM [IAS].[Employeelist] WHERE isActive!= 0 )
+SET @AssetlistCount= ( SELECT COUNT(CODE) FROM [IAS].[Assetlist]WHERE Status NOT LIKE 'Damaged' AND Status  IS NOT NULL AND Status !='')
+SET @AvailableAssetCount= (SELECT COUNT(CODE) FROM [IAS].[Assetlist] WHERE Status LIKE 'Available' )
+SET @InUseAssetCount= (SELECT COUNT(CODE) FROM [IAS].[Assetlist] WHERE Status LIKE 'In Use' )
+
+select @EmployeeCount as EmployeeCount,@AssetlistCount as TotalAssets ,@AvailableAssetCount as AvailableCount, @InUseAssetCount as InUseCount 

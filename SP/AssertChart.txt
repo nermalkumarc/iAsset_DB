@@ -1,0 +1,13 @@
+USE [TEST]
+GO
+/****** Object:  StoredProcedure [IAS].[AssertChart]    Script Date: 23-12-2019 10:14:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [IAS].[AssertChart] 
+AS
+select Name, sum(InUse)InUse,sum(Available)Available from (
+SELECT Name,COUNT(CODE) InUse, 0 Available FROM [IAS].[Assetlist] Where Status LIKE 'In Use' GROUP BY Name 
+UNION ALL 
+SELECT Name,0 InUse,COUNT(CODE) Available FROM [IAS].[Assetlist] where Status NOT LIKE 'Damaged' AND Status  IS NOT NULL AND Status !='' GROUP BY Name )var group by Name 
